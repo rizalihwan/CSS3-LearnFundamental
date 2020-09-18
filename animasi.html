@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Pertama</title>
+	<style type="text/css">
+		.kotak{
+			width: 200px;
+			height: 200px;
+			background: gold;
+			animation: animasinya 2s ease;
+		}
+		@keyframes animasinya {
+			0%{
+				width: 200px;
+			}
+			50%{
+				width: 500px;
+				height: 200px;
+			}
+			100%{
+				width: 500px;
+				height: 300px;
+			}
+		}
+		.kotak2{
+			height: 200px;
+			width: 200px;
+			background: green;
+			animation: animasi 2s ease 3; 
+		}
+		@keyframes animasi{
+			0%{
+				width: 200px;
+				height: 200px;
+			}
+			50%{
+				width: 400px;
+				height: 200px;
+			}
+			100%{
+				width: 400px;
+				height: 300px;
+			}
+		}
+		.kotak3{
+			width: 200px;
+			height: 200px;
+			background: salmon;
+			animation: animasina 2s ease 2 alternate;
+		}
+		@keyframes animasina{
+			0%{	
+				width: 200px;
+				height: 200px;
+			}
+			50%{
+				width: 500px;
+				height: 200px;
+			}
+			100%{
+				width: 500px;
+				height: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="kotak3"></div>
+	<br><br><br>
+	<div class="kotak"></div>
+	<br><br><br>
+	<div class="kotak2"></div>
+</body>
+</html>

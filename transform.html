@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Penggunaan TransForm</title>
+    <style>
+         /*
+            scale(angka), scaleX(angka), scaleY(angka)
+            rotate(deg), rotateX(deg), rotateY(deg)
+            skew(deg), skewX(deg), skewY(deg)
+            translate(px), translateX(px), translate(px)
+
+          */
+          .kotak{
+              width: 200px;
+              height: 200px;
+              background: blue;
+              margin: 100px 0 0 450px;
+              transition: 1s; /*waktu*/
+          }
+          .kotak:hover{
+              transform: scale(1.5, 2); /*scale = untuk ukuran 1.5(horizontal) 2(vertical)*/ 
+          }
+          /**/
+          .kotak2{
+              width: 200px;
+              height: 200px;
+              background: yellow;
+              margin: 100px 0 0 450px;
+              transition: 1s;
+          }
+          .kotak2:hover{
+              transform: rotate(180deg);/*rotate = memutar atau rotasi, rotateX(horizontal) rotateY(Vertical) */
+          }
+          /**/
+          .kotak3{
+              width: 200px;
+              height: 200px;
+              background: salmon;
+              margin: 100px 0 0 450px;
+              transition: 1s;
+          }
+          .kotak3:hover{
+              transform: skew(-30deg); /*SCEW = membelokan */
+          }
+           /**/
+           .kotak4{
+              width: 200px;
+              height: 200px;
+              background: rgb(74, 146, 204);
+              margin: 100px 0 0 450px;
+              transition: 1s;
+          }
+          .kotak4:hover{
+              transform: translate(0px,100px); /*translate = animasi enak buat bikin navbar atau menu maupun dashboard 0px(keKanan) 100px(keBawah)*/
+          }
+    </style>
+</head>
+<body>
+      <div class="kotak"></div>
+      <div class="kotak2"></div>
+      <div class="kotak3"></div>
+      <div class="kotak4"></div>
+</body>
+</html>
